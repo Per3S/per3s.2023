@@ -348,7 +348,7 @@ mark {
 							</h6>
 							<h3>Revisiting storage virtualization for modern devices</h3>
 							<h4>Damien Thenot, VATES, Télécom SudParis</h4>
-							<p>Bref Abstract.</p>
+							<p>Since decades, the performance cost of virtualizing a hard drive was acceptable because a hard drive was orders of magnitudes slower than the virtualization layer.  However, since a few years, new storage devices with low latency and high throughput have emerged (e.g. NVMe).  These devices make old storage virtualization techniques obsolete because the virtualization layer prevents a virtual machine of fully leveraging modern storage capabilities.  Nowadays the best performance is obtained by using passthrough of a full disk to a virtual machine.  Unfortunately passthrough prevents the usage of important functionalities like Virtual Disk Image (VDI) snapshot, virtual machine migration to another host, storage device sharing with other VMs and everything where the host might need access to the disk.  Therefore new ways of virtualizing storage devices need to be developed to enable the best of both performances that the new technologies bring and functionalities that virtualization technologies offers.  During this presentation, I will introduce the current IO software stack in XCP-ng, a Xen based virtualization platform.  And I will discuss the challenges encountered while trying to enhance the storage software stack of a hypervisor.</p>
 						</div>
 						<!-- program divider -->
 						<div class="program-divider col-md-12 col-sm-12"></div>
