@@ -230,6 +230,7 @@ mark {
 							<h4>Radu Stoica, IBM Zurich</h4>
 							<p>
                                                          <p>Solid-state drives (SSDs) are extensively used to deploy persistent data stores, as they provide low latency random access, high write throughput, high data density, and low cost. Tree-based data structures are widely used to build persistent data stores, and indeed they lie at the backbone of many of the data management systems used in production and research today. In this paper, we show that benchmarking a persistent tree-based data structure on an SSD is a complex process, which may easily incur subtle pitfalls that can lead to an inaccurate performance assessment. At a high-level, these pitfalls stem from the interaction of complex software running on complex hardware. On one hand, tree structures implement internal operations that have nontrivial effects on performance. On the other hand, SSDs employ firmware logic to deal with the idiosyncrasies of the underlying flash memory, which are well known to lead to complex performance dynamics. We identify seven benchmarking pitfalls using RocksDB and WiredTiger, two widespread implementations of an LSM-Tree and a B+Tree, respectively. We show that such pitfalls can lead to incorrect measurements of key performance indicators, hinder the reproducibility and the representativeness of the results, and lead to suboptimal deployments in production environments. We also provide guidelines on how to avoid these pitfalls to obtain more reliable performance measurements, and to perform more thorough and fair comparison among different design points.</p>
+                            <p><a href="slides/radu_stoica.pdf">Slide Here!</a> </p>
 						</div>
 
 
@@ -405,6 +406,7 @@ Pour résoudre le problème multi-objectifs proposé, nous avons développé CDP
 							<h3> Investigating allocation of heterogeneous storage resources on HPC systems </h3>
 							<h4> Julien Monniot, INRIA Rennes </h4>
 							<p> The ability of large-scale infrastructures to store and retrieve a massive amount of data is now decisive to scale up scientific applications. However, there is an ever-widening gap between I/O and computing performance: over the last ten years, the ratio of I/O bandwidth to computing power has been divided by ~10 on the top 3 supercomputers of the Top500. A way to mitigate this gap consists of deploying new intermediate storage tiers (node-local storage, burst-buffers, ...) and their underlying technologies (NVMeoF, NVRAM, ...) between the compute nodes and the traditional global shared parallel file-system. Unfortunately, without advanced techniques to allocate and size these resources, they remain underutilized. To address this problem, we investigate how heterogeneous storage resources can be allocated on an HPC platform, in a similar way as compute resources. In that regard, we introduce StorAlloc, a simulator used as a testbed for assessing storage-aware job scheduling algorithms and evaluating various storage infrastructures.  </p>
+                            <p> <a href="slides/julien_monniot.pdf">Slide Here!</a> </p>
 						</div>
 
 					</div>
