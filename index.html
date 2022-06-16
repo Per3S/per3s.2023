@@ -247,8 +247,8 @@ mark {
 							</h6>
 							<h3>IO-SETS: Simple and efficient approaches for I/O </h3>
 							<h4>Francieli Zanon Boito, Inria Bordeaux</h4>
-							<p> One of the main performance issues faced by high-performance platforms is the delay caused by concurrent applications performing I/O. When this happens, applications sharing the I/O bandwidth create congestion, which delays the execution time and affects the platform’s overall performance. Several solutions have been proposed to tackle I/O congestion. Among those solutions, I/O scheduling strategies are an essential solution to this problem in HPC systems. Currently, their main drawback is the amount of information needed. In this work, we propose a novel framework for I/O management, IO-SETS. We present the potential of this framework through a simple scheduling solution called SET-10, an I/O scheduling solution that demands minimum information from users and can be easily integrated into HPC environments.
-							</p>
+							<p> One of the main performance issues faced by high-performance platforms is the delay caused by concurrent applications performing I/O. When this happens, applications sharing the I/O bandwidth create congestion, which delays the execution time and affects the platform’s overall performance. Several solutions have been proposed to tackle I/O congestion. Among those solutions, I/O scheduling strategies are an essential solution to this problem in HPC systems. Currently, their main drawback is the amount of information needed. In this work, we propose a novel framework for I/O management, IO-SETS. We present the potential of this framework through a simple scheduling solution called SET-10, an I/O scheduling solution that demands minimum information from users and can be easily integrated into HPC environments.</p>
+                            <p><a href="slides/per3s_2022_FrancieliBoito.pdf">Slide Here!</a> </p>
 						</div>
 
 						<!-- program divider -->
@@ -350,6 +350,7 @@ mark {
 							<h3>Revisiting storage virtualization for modern devices</h3>
 							<h4>Damien Thenot, VATES, Télécom SudParis</h4>
 							<p>Since decades, the performance cost of virtualizing a hard drive was acceptable because a hard drive was orders of magnitudes slower than the virtualization layer.  However, since a few years, new storage devices with low latency and high throughput have emerged (e.g. NVMe).  These devices make old storage virtualization techniques obsolete because the virtualization layer prevents a virtual machine of fully leveraging modern storage capabilities.  Nowadays the best performance is obtained by using passthrough of a full disk to a virtual machine.  Unfortunately passthrough prevents the usage of important functionalities like Virtual Disk Image (VDI) snapshot, virtual machine migration to another host, storage device sharing with other VMs and everything where the host might need access to the disk.  Therefore new ways of virtualizing storage devices need to be developed to enable the best of both performances that the new technologies bring and functionalities that virtualization technologies offers.  During this presentation, I will introduce the current IO software stack in XCP-ng, a Xen based virtualization platform.  And I will discuss the challenges encountered while trying to enhance the storage software stack of a hypervisor.</p>
+                            <p> <a href="slides/damien_thenot_per3s.pdf">Slide Here!</a> </p>
 						</div>
 						<!-- program divider -->
 						<div class="program-divider col-md-12 col-sm-12"></div>
@@ -366,6 +367,7 @@ mark {
 							<h3> Conception d'un algorithme d'entrainement de forêt aléatoire économe en E/S </h3>
 							<h4>Camélia Slimani, Laboratoire des sciences et techniques de línformation, de la communication et de la connaissance</h4>
 							<p> Les forêts aléatoires sont une méthode de classification supervisée. Leur principe est d'entraîner plusieurs sous-ensembles d’éléments du data-set d'entraînement séparément pour former plusieurs arbres. Chaque arbre classifie les éléments de son sous-ensemble selon un certain nombre de propriétés du data-set. Ainsi, une feuille de l’arbre constitue une classe de données « plus ou moins » pure (tous les éléments de la feuille appartiennent à une même classe).  L'entraînement de chaque arbre consiste à sélectionner les propriétés du data-set qui permettent d’avoir des nœuds feuilles les plus pures possible. Cela revient à répartir les éléments de l’arbre selon chaque propriété pour en déterminer la meilleure et donc à parcourir le sous-ensemble de données plusieurs fois.  Dans un contexte d’espace mémoire restreint, où la taille du data-set est supérieure à la taille de la mémoire disponible cela va engendrer des swaps de parties du data-set en espace de stockage secondaire et donc engendrer un volume important d’E/S, notamment lorsque le nombre de propriétés du data-set est élevé. D’après nos expériences, le pourcentage de temps d’E/S représente jusqu’à 90% du temps d’exécution total pour un data-set qui est deux fois plus grand que la mémoire disponible.  Nous révisons dans ce travail l’algorithme de forêts aléatoires pour le rendre moins gourmand en E/S. La méthode proposée est fondée sur deux mécanismes, le premier vise à réorganiser le data-set de sorte à augmenter la localité spatiale. Le deuxième mécanisme consiste à charger les données à la demande, uniquement lorsqu’elles sont utiles au traitement d’un nœud de l’arbre. L’évaluation de la méthode proposée montre que le temps de construction d’une forêt aléatoire est réduit de 70% en moyenne.  </p>
+                            <p> <a href="slides/presentation_per3s_2022_CS_RAFIO.pdf">Slide Here!</a> </p>
 						</div>
 						<!-- program divider -->
 						<div class="program-divider col-md-12 col-sm-12"></div>
@@ -384,6 +386,7 @@ mark {
 							<p>Pour gérer les performances d’E/S des clients, les infrastructures clouds actuelles hébergent différentes classes de stockage ayant différentes caractéristiques en termes de performances et de prix. Tandis que, pour optimiser la latence du réseau, les CSP tentent de rapprocher dynamiquement les objets de leurs utilisateurs. De ce point de vue, comment placer efficacement les objets des clients pour un cloud faisant partie d’une fédération constitue un véritable défi. 
 Nous avons exploité un modèle de coût soumis à différentes contraintes liées à l’hétérogénéité des classes et services de stockage locaux et fédérés, les charges de travail des clients et leur SLA.
 Pour résoudre le problème multi-objectifs proposé, nous avons développé CDP-NSGAIIIR (a Constraint Data Placement matheuristic based on NSGAII with Injection and Repair functions). CDP-NSGAIIIR est une matheuristique de placement de données qui ajoute à NSGAII des fonctions d’injection et de réparation. La fonction d’injection vise à améliorer la qualité des solutions de NSGAII. Elle consiste à calculer des solutions à l’aide d’une méthode exacte puis à les injecter dans la population initiale de NSGAII. La fonction de réparation garantit que les solutions obéissent aux contraintes du problème et évite ainsi d’explorer de grands ensembles de solutions irréalisables. </p>
+                            <p> <a href="slides/Per3s_amina.pdf">Slide Here!</a> </p>
 						</div>
 
 
@@ -459,6 +462,7 @@ Pour résoudre le problème multi-objectifs proposé, nous avons développé CDP
 							<h3>Leaderless State-Machine Replication: An Overview </h3>
 							<h4>Pierre SUTRA, Télécom SudParis</h4>
 							<p> Modern cloud applications replicate their data in multiple geographical locations and require strong consistency guarantees for their most critical data. These guarantees are usually provided via state-machine replication (SMR). Recent advances in SMR have focused on leaderless protocols, which improve the availability and performance of traditional Paxos-based solutions. This talk offers an overview of this new generation of replication protocols.  </p>
+                            <p> <a href="slides/Pierre_sutra_Per3S22.pdf">Slide Here!</a> </p>
 						</div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="lowlevel">
@@ -477,6 +481,7 @@ Pour résoudre le problème multi-objectifs proposé, nous avons développé CDP
 							<h4>Thomas Leibovici, CEA, Patrice Lucas, CEA - Philippe Deniel, CEA </h4>
 							<p> Phobos is an open-source parallel object store designed to manage large volumes of data. It can manage various kind of storage from SSD devices to tapes libraries. Phobos is developed at CEA, where it has been in production since 2016 to manage the many petabytes of the France Genomique dataset, hosted in the TGCC compute center. Very large datasets are handled efficiently on inexpensive media without sacrificing scalability, performance, or fault-tolerance requirements. Phobos is designed to offer different layouts, such as mirrored double write and erasure coding. I/O on magnetic tapes are optimized through the use of dedicated scheduling policies applied during allocation of storage resources.  Phobos natively supports the control of tape libraries in SCSI and relies on well-known standards (such as writing to tapes via LTFS) to avoid any dependency on a proprietary format. It provides several interfaces including S3 and the possibility of being an HSM backend for Lustre in a Lustre/HSM configuration. Its API also makes it easy to add other front-ends, including an interface to present data as a POSIX filesystem (under development).  
 This presentation presents the design of Phobos, designed to be used in an Exascale context, and also some future use cases to which it is able to respond effectively.</p>
+                            <p> <a href="slides/phobos-unlock_your_data_Per3S.pdf">Slide Here!</a> </p>
 						</div>
 						<!-- program divider -->
 						<div class="program-divider col-md-12 col-sm-12"></div>
@@ -495,6 +500,7 @@ This presentation presents the design of Phobos, designed to be used in an Exasc
 							<p>In this talk, we present the PDI Data Interface designed to handle HPC simulation data in a flexible way. PDI separates data generation from its management through a plugin system (HDF5, NetCDF, FTI, etc.) to enable IO optimization experts to adopt the best solution in each situation without modifying or even recompiling simulation codes.
 Because from a performance point of view, the best IO is the IO you don't do, PDI also offers plugins for in situ data handling (Melissa, Sensei, etc.).  Using such plugins allows reducing the quantity of data that is written  and fully leveraging the HPC platform.  In this talk, we focus on the Deisa plugin that interfaces MPI simulations with Dask-based in situ data analytics.
 </p>
+                            <p> <a href="slides/Per3S_amal_gueroudji.pdf">Slide Here!</a> </p>
 						</div>
 
 						<!-- program divider -->
