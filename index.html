@@ -136,7 +136,7 @@ mark {
 			<div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
 				<i class="fa fa-clock-o"></i>
 				<h3>3 sessions</h3>
-				<p>Le programme de la journée inclut 3 sessions, une sur les thématiques de passage a l'échelle pour le stockage de données, une sur les aspects relatif au Cloud, une troisième sur les considérations bas niveau qui permettent de passer à l'échelle et enfin une session dédiée aux travaux des doctorants et jeunes chercheurs.</p>
+				<p>Le programme de la journée inclut 3 sessions, une sur les thématiques sur le Cloud et les technologies de stockage de données, une second session dédiée aux travaux des doctorants et jeunes chercheurs une l'après-midi dédiée au HPC en général et Lustre en particulier.</p>
 			</div>
 
 			<div class="wow fadeInRight col-md-4 col-sm-4" data-wow-delay="0.9s">
@@ -206,8 +206,7 @@ mark {
 				<ul class="nav nav-tabs" role="tablist">
 					<li class="active"><a href="#atscale" aria-controls="atscale" role="tab" data-toggle="tab">Storage at Scale</a></li>
 					<li><a href="#flash" aria-controls="flash" role="tab" data-toggle="tab">Présentation Flash et Doctorants</a></li>
-					<li><a href="#cloud" aria-controls="cloud" role="tab" data-toggle="tab">Cloud and Storage</a></li>
-					<li><a href="#lowlevel" aria-controls="lowlevel" role="tab" data-toggle="tab">Low level and Scale enablers</a></li>
+					<li><a href="#cloud" aria-controls="cloud" role="tab" data-toggle="tab">HPC and Lustre</a></li>
 				</ul>
 				<!-- tab panes -->
 				<div class="tab-content">
@@ -410,24 +409,23 @@ Pour résoudre le problème multi-objectifs proposé, nous avons développé CDP
 					</div>
 
 					<div role="tabpanel" class="tab-pane" id="cloud">
-						<h3> 14h-15h30   Cloud and Storage </h3>
+						<h3> 14h-17h00 HPC and Lustre </h3>
 
 						<!-- program divider -->
 						<div class="program-divider col-md-12 col-sm-12"></div>
 
 						<!-- program speaker here -->
 						<div class="col-md-2 col-sm-2">
-							<img src="images/Charlotte_Letamendia.jpeg" class="img-responsive" alt="program">
+							<img src="images/peter_jones.jpeg" class="img-responsive" alt="program">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
 								<span><i class="fa fa-clock-o"></i>14h00</span> 
 								<span><i class="fa fa-map-marker"></i>Amphi Thévenin</span>
 							</h6>
-							<h3>Object Storage - What shirt suits you?</h3>
-							<h4>Charlotte Letamendia, OVHCloud</h4>
-							<p> OVHcloud facilitates the Object Storage data management with 3 S3 new tiers of storage designed by use cases:
-							IA & media, web & back-up, archive OVHcloud will present the product line, and best practices to optimize the management of the data that brings efficiency, cost optimization and better resiliency.</p>
+							<h3>Lustre: status and path forward </h3>
+							<h4>TBA, Whamcloud</h4>
+							<p> TBA </p>
 						</div>
 
 						<!-- program divider -->
@@ -435,16 +433,16 @@ Pour résoudre le problème multi-objectifs proposé, nous avons développé CDP
 
 						<!-- program speaker here -->
 						<div class="col-md-2 col-sm-2">
-							<img src="images/shadi_ibrahim.jpeg" class="img-responsive" alt="program">
+							<img src="images/philippe_deniel.jpeg" class="img-responsive" alt="program">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
 								<span><i class="fa fa-clock-o"></i>14h30</span> 
 								<span><i class="fa fa-map-marker"></i>Amphi Thévenin</span>
 							</h6>
-							<h3> Time to Revisit Erasure Codes in Data-intensive Clusters </h3>
-							<h4>Shadi Ibrahim, Inria</h4>
-							<p> Replication has been successfully employed and practiced to ensure high data availability in large-scale distributed storage systems. However, with the relentless growth of generated and collected data, replication has become expensive not only in terms of storage cost but also in terms of network cost and hardware cost. Traditionally, erasure coding (EC) is employed as a cost-efficient alternative to replication when high access latency to the data can be tolerated. However, with the continuous reduction in its CPU overhead, EC is performed on the critical path of data access. For instance, EC has been integrated into the last major release of Hadoop Distributed File System (HDFS) which is the primary storage backend for data analytic frameworks such as Hadoop and Spark. This talk explores some of the potential benefits of erasure coding in data-intensive clusters and discusses aspects that can help to realize EC effectively for data-intensive applications. </p>
+							<h3> Lustre feedback from a deployement at scale </h3>
+							<h4>Philippe Deniel, CEA</h4>
+							<p> TBA </p>
 						</div>
 
 						<!-- program divider -->
@@ -465,64 +463,6 @@ Pour résoudre le problème multi-objectifs proposé, nous avons développé CDP
                             <p> <a href="slides/Pierre_sutra_Per3S22.pdf">Slide Here!</a> </p>
 						</div>
 					</div>
-					<div role="tabpanel" class="tab-pane" id="lowlevel">
-						<h3> 16h-17h30   Low level and scale enablers </h3>
-                                                <div class="program-divider col-md-12 col-sm-12"></div>
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/thomas_leibovici.jpeg" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i> 16h00</span> 
-								<span><i class="fa fa-map-marker"></i>Amphi Thévenin</span>
-							</h6>
-							<h3>Phobos: a scale-out object store implementing tape library support</h3> 
-							<h4>Thomas Leibovici, CEA, Patrice Lucas, CEA - Philippe Deniel, CEA </h4>
-							<p> Phobos is an open-source parallel object store designed to manage large volumes of data. It can manage various kind of storage from SSD devices to tapes libraries. Phobos is developed at CEA, where it has been in production since 2016 to manage the many petabytes of the France Genomique dataset, hosted in the TGCC compute center. Very large datasets are handled efficiently on inexpensive media without sacrificing scalability, performance, or fault-tolerance requirements. Phobos is designed to offer different layouts, such as mirrored double write and erasure coding. I/O on magnetic tapes are optimized through the use of dedicated scheduling policies applied during allocation of storage resources.  Phobos natively supports the control of tape libraries in SCSI and relies on well-known standards (such as writing to tapes via LTFS) to avoid any dependency on a proprietary format. It provides several interfaces including S3 and the possibility of being an HSM backend for Lustre in a Lustre/HSM configuration. Its API also makes it easy to add other front-ends, including an interface to present data as a POSIX filesystem (under development).  
-This presentation presents the design of Phobos, designed to be used in an Exascale context, and also some future use cases to which it is able to respond effectively.</p>
-                            <p> <a href="slides/phobos-unlock_your_data_Per3S.pdf">Slide Here!</a> </p>
-						</div>
-						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
-
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/amal_gueroudji.png" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i> 16h30</span> 
-								<span><i class="fa fa-map-marker"></i>Amphi Thévenin</span>
-							</h6>
-							<h3>Handling IO data with PDI and Optimizing away IO with PDI/Deisa</h3>
-							<h4>Amal GUEROUDJI, Maison de la Simulation</h4>
-							<p>In this talk, we present the PDI Data Interface designed to handle HPC simulation data in a flexible way. PDI separates data generation from its management through a plugin system (HDF5, NetCDF, FTI, etc.) to enable IO optimization experts to adopt the best solution in each situation without modifying or even recompiling simulation codes.
-Because from a performance point of view, the best IO is the IO you don't do, PDI also offers plugins for in situ data handling (Melissa, Sensei, etc.).  Using such plugins allows reducing the quantity of data that is written  and fully leveraging the HPC platform.  In this talk, we focus on the Deisa plugin that interfaces MPI simulations with Dask-based in situ data analytics.
-</p>
-                            <p> <a href="slides/Per3S_amal_gueroudji.pdf">Slide Here!</a> </p>
-						</div>
-
-						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
-
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/guillaume_prenat.jpeg" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i> 17h00</span> 
-								<span><i class="fa fa-map-marker"></i>Amphi Thévenin</span>
-							</h6>
-							<h3>Spintronics: from device to system for low-power, reliable applications and non-conventional computing</h3>
-							<h4>Guillaume PRENAT, Université Grenoble Alpes, CEA-Grenoble</h4>
-							<p>In this talk, we will present how spintronics can contribute to push forward the limits of microelectronics scaling. We will first introduce this emerging non-volatile technology and explain how the standard design flow has to be adapted to integrate spintronic devices. Then, we will give examples of using hybrid CMOS/spintronics circuits for specific purposes, including low-power, reliability improvement or non-conventional computing.</p>
-						</div>
-
-					</div>
-
-
 
 		</div>
 	</div>
@@ -565,6 +505,17 @@ François Trahay is an associate professor at Télécom SudParis since 2011. He 
 								<h6>ENSTA - Bretagne</h6>
 								<h6>Comité de Pilotage</h6>
 								Jalil Boukhobza is Professor at the ENSTA-Bretagne, a French State Graduate, Post-Graduate and Research Institute. His main research interests include storage system design, performance evaluation and energy optimization, and operating system design. He works on different application domains such as embedded systems, cloud computing, and database systems.
+							</div>
+					</div>
+				</div>
+				<div class="item wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.6s">
+					<div class="speakers-wrapper">
+						<img src="images/shadi_ibrahim.png" class="img-responsive" alt="speakers">
+							<div class="speakers-thumb">
+								<h3>Shadi Ibrahim </h3>
+								<h6>INRIA - Bretagne</h6>
+								<h6>Comité de Pilotage</h6>
+                                Shadi Ibrahim is a Research Scientist at Inria. He obtained his Ph.D. degree in Computer Science from Huazhong University of Science and Technology (HUST) in Wuhan of China in 2011. His current research interests are in scalable data management, storage systems, data-intensive computing, parallel I/O and distributed file systems, virtualization technology and Cloud/Fog computing. Dr. Ibrahim received in 2020 the IEEE TCSC Award for Excellence in Scalable Computing (Middle Career Researcher), he's a Distinguished member of the ACM and a Senior member of IEEE.
 							</div>
 					</div>
 				</div>
