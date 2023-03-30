@@ -218,87 +218,84 @@ mark {
 
 						<!-- program speaker here -->
 						<div class="col-md-2 col-sm-2">
-							<img src="images/radu_stoica.jpg" class="img-responsive" alt="program">
+							<img src="images/maria_massri.jpeg" class="img-responsive" alt="program">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
 								<span><i class="fa fa-clock-o"></i>09.30 am</span> 
 								<span><i class="fa fa-map-marker"></i>Amphi Thévenin</span>
 							</h6>
-							<h3>Towards a Better Understanding and Evaluation of Tree Structures on SSDs</h3>
-							<h4>Radu Stoica, IBM Zurich</h4>
+							<h3>Graph Database </h3>
+							<h4>Maria Massri, Orange Cloud</h4>
 							<p>
-                                                         <p>Solid-state drives (SSDs) are extensively used to deploy persistent data stores, as they provide low latency random access, high write throughput, high data density, and low cost. Tree-based data structures are widely used to build persistent data stores, and indeed they lie at the backbone of many of the data management systems used in production and research today. In this paper, we show that benchmarking a persistent tree-based data structure on an SSD is a complex process, which may easily incur subtle pitfalls that can lead to an inaccurate performance assessment. At a high-level, these pitfalls stem from the interaction of complex software running on complex hardware. On one hand, tree structures implement internal operations that have nontrivial effects on performance. On the other hand, SSDs employ firmware logic to deal with the idiosyncrasies of the underlying flash memory, which are well known to lead to complex performance dynamics. We identify seven benchmarking pitfalls using RocksDB and WiredTiger, two widespread implementations of an LSM-Tree and a B+Tree, respectively. We show that such pitfalls can lead to incorrect measurements of key performance indicators, hinder the reproducibility and the representativeness of the results, and lead to suboptimal deployments in production environments. We also provide guidelines on how to avoid these pitfalls to obtain more reliable performance measurements, and to perform more thorough and fair comparison among different design points.</p>
-                            <p><a href="slides/radu_stoica.pdf">Slide Here!</a> </p>
+                            <p> TBA </p>
 						</div>
 
 
 						<!-- program divider -->
 						<div class="program-divider col-md-12 col-sm-12"></div>
 
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/francieli.jpg" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i>10h00 AM</span> 
-								<span><i class="fa fa-map-marker"></i>Amphi Thévenin</span>
-							</h6>
-							<h3>IO-SETS: Simple and efficient approaches for I/O </h3>
-							<h4>Francieli Zanon Boito, Inria Bordeaux</h4>
-							<p> One of the main performance issues faced by high-performance platforms is the delay caused by concurrent applications performing I/O. When this happens, applications sharing the I/O bandwidth create congestion, which delays the execution time and affects the platform’s overall performance. Several solutions have been proposed to tackle I/O congestion. Among those solutions, I/O scheduling strategies are an essential solution to this problem in HPC systems. Currently, their main drawback is the amount of information needed. In this work, we propose a novel framework for I/O management, IO-SETS. We present the potential of this framework through a simple scheduling solution called SET-10, an I/O scheduling solution that demands minimum information from users and can be easily integrated into HPC environments.</p>
-                            <p><a href="slides/per3s_2022_FrancieliBoito.pdf">Slide Here!</a> </p>
-						</div>
-
-						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
-
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/Sophie_Robert_Hayek.jpeg" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i>10h30 AM</span> 
-								<span><i class="fa fa-map-marker"></i>Amphi Thévenin</span>
-							</h6>
-							<h3>Using metadata matching for prefetching strategy auto-optimization</h3>
-							<h4>Sophie Robert-Hayek, Atos</h4>
-							<p> As High Performance Computing systems become more and more complex, optimal performance can only be obtained through self-adaptive behavior. This often requires some knowledge of incoming applications, even before the application is launched, in order to customize runtime environments to the particular needs of this application. In this talk, we discuss the architecture of an auto-tuner which relies on metadata matching to match an incoming application with a database of already known applications, to predict their I/O behavior and customize the runtime parameters of a prefetching strategy. This system has been implemented in the case of a scenario representative of conditions we expect to encounter in production, where we show an improvement of 28% in terms of I/O performance compared to the default parametrization for a set of benchmarks. Besides, we demonstrate that this tuner's architecture provides a negligible overhead when used in a high-traffic scenario, making it resilient for parallel use on a production HPC cluster.</p>
-						</div>
-						
-						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/marco_aldinucci.png" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i>11h00 AM</span> 
-								<span><i class="fa fa-map-marker"></i>Amphi Thévenin</span>
-							</h6>
-							<h3>From small files to no files</h3>
-							<h4>Marco Aldinucci, University of  Torino, Italy</h4>
-							<p> Modern distributed high-performance storage systems saturate the network bandwidth, and the margins for improvement at the software level are tiny. Due to metadata access, they might be troubled with massive access to small files. An example is the Software Heritage (SH) dataset, half petabytes of files with an average size of 3kBytes (Terabytes of metadata). While working with SH, we developed the idea of substituting files with in-memory streams. We did it living in dread with the fear of asking application programmers to rewrite their lovely antique legacy code exploiting the POSIX interface, and up to now, we did not. In the talk, we will introduce CAPIO (Cross-Application Programmable I/O) design principles and the current state of development of the prototype.  </p>
-						</div>
-
-						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
 						<!-- program speaker here -->
 						<div class="col-md-2 col-sm-2">
 							<img src="images/Francois.png" class="img-responsive" alt="program">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
+								<span><i class="fa fa-clock-o"></i>10h00 AM</span> 
+								<span><i class="fa fa-map-marker"></i>Amphi Thévenin</span>
+							</h6>
+							<h3>Why Globally Re-shuffle? Revisiting Data Shuffling in Large Scale Deep Learning.IO-SETS: Simple and efficient approaches for I/O </h3>
+							<h4>François Trahay, Telecom SudParis  </h4>
+                            <p> TBA </p>
+						</div>
+
+						<!-- program divider -->
+						<div class="program-divider col-md-12 col-sm-12"></div>
+
+						<!-- program speaker here -->
+						<div class="col-md-2 col-sm-2">
+							<img src="images/amine_ismail.jpeg" class="img-responsive" alt="program">
+						</div>
+						<div class="col-md-10 col-sm-10">
+							<h6>
+								<span><i class="fa fa-clock-o"></i>10h30 AM</span> 
+								<span><i class="fa fa-map-marker"></i>Amphi Thévenin</span>
+							</h6>
+							<h3>HIVE</h3>
+							<h4>Amine Ismail</h4>
+                            <p> TBA </p>
+						</div>
+						
+						<!-- program divider -->
+						<div class="program-divider col-md-12 col-sm-12"></div>
+						<!-- program speaker here -->
+						<div class="col-md-2 col-sm-2">
+							<img src="images/Charlotte_Letamendia.jpeg" class="img-responsive" alt="program">
+						</div>
+						<div class="col-md-10 col-sm-10">
+							<h6>
+								<span><i class="fa fa-clock-o"></i>11h00 AM</span> 
+								<span><i class="fa fa-map-marker"></i>Amphi Thévenin</span>
+							</h6>
+							<h3> TBA</h3>
+							<h4>Charlotte Latemendia, OVH Cloud</h4>
+                            <p> TBA </p>
+						</div>
+
+						<!-- program divider -->
+						<div class="program-divider col-md-12 col-sm-12"></div>
+						<!-- program speaker here -->
+						<div class="col-md-2 col-sm-2">
+							<img src="images/francois_tessier.jpeg" class="img-responsive" alt="program">
+						</div>
+						<div class="col-md-10 col-sm-10">
+							<h6>
 								<span><i class="fa fa-clock-o"></i>11h30 AM</span> 
 								<span><i class="fa fa-map-marker"></i>Amphi Thévenin</span>
 							</h6>
-							<h3>Investigating IO bottlenecks with EZTrace </h3>
-							<h4>François Trahay, IMT-Palaiseau</h4>
-							<p> Identifying the part of a distributed application that is affecting performance is complex. EZTrace helps developers investigate performance issues by generating execution traces of parallel applications. We show that EZTrace can locate the process that suffers from I/O contention, and how IOTracer helps identify the precise origin of the bottleneck in the I/O stack. </p>
-                            <p><a href="slides/eztrace.pdf">Slide Here!</a> </p>
+							<h3>TBA </h3>
+							<h4>François Tessier, IMT-Palaiseau</h4>
+							<p> TBA </p>
 						</div>
 					</div>
 
