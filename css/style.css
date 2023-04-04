@@ -245,9 +245,9 @@ footer {
 
 @media(min-width:768px) {
     .custom-navbar {
-        padding: 20px 0;
+        padding: 0px 0;
         border-bottom: 0;
-        background: 0 0; 
+        background: 1 0; 
     }
     .custom-navbar.top-nav-collapse {
         background: #101010;
@@ -262,7 +262,7 @@ footer {
     Intro section              
 -----------------------------------------*/
 #intro {
-    background: url('../images/intro-per3s.jpg') 50% 0 repeat-y fixed;
+    background: url('../images/maison_des_mines_resize.jpg') 50% 0 repeat-y fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -526,7 +526,7 @@ footer {
    Venir section              
 -----------------------------------------*/
 #venir {
-    background: url('../images/map-closeup.png') 100% 0 repeat-y fixed;
+    background: url('../images/carte_maison_des_mines_et_des_ponts.png') 100% 0 repeat-y fixed;
     background-size: cover;
     background-position: center center;
     padding-top: 7rem;
