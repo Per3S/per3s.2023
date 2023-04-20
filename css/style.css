@@ -262,10 +262,11 @@ footer {
     Intro section              
 -----------------------------------------*/
 #intro {
-    background: url('../images/maison_des_mines_resize.jpg') 50% 0 repeat-y fixed;
+    background: url('../images/maison_des_mines_resize.jpg') 10% 0 repeat-y fixed;
     -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
+/*    background-size: cover; */
+ background-size: 100% auto;
+   background-position: center center;
     color: #ffffff;
     display: -webkit-box;
     display: -webkit-flex;
@@ -275,8 +276,8 @@ footer {
      -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-    height: 100vh;
-    text-align: center;
+  height: 80vh;
+  text-align: center;
 }
 
 #intro h3 {
