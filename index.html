@@ -416,7 +416,7 @@ The Steinbuch Center for Computing (SCC) at Karlsruhe Institute of Technology (K
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
 							<h3> Adapting the ARC Cache Management Policy to File Granularity </h3>
-							<h4> Hocine Mahni </h4>
+							<h4> Hocine Mahni, ENSTA </h4>
 							<p> One of the biggest challenges facing storage HPC systems today is the placement and the migration of data into different storage levels. To decide to move a file from one tier to another, placement policies have been defined and implemented in multi-tiered storage systems. For instance, file placement tasks in CEA supercomputers are performed using ROBINHOOD 1, a tool for applying and planning data placement policies. This tool works at the file granularity.  The problem of selecting the subset of data to keep in a low-capacity, high-speed memory has been studied for implementing memory page caches in operating systems. 
 The ARC (Adaptive Replacement Cache) algorithm, or its adaptations, are state-of-the-art solutions to manage page caches. ARC is an adaptive caching algorithm that is designed to consider both recency and frequency of accesses. It manages the cache with two LRU lists at a block granularity.  
 In this work, our aim is to determine whether the ARC algorithm is transposable to the management of a two-tier (HDD-SSD) storage architecture at a file granularity. Our strategy seeks to elaborate a trade-off between recency and frequency of accesses in order to keep in the top tier the recently and frequently used files while keeping the logic of ARC as it proved to be highly efficient.  To evaluate our method, we use a storage simulator that we have enriched with our adapted ARC.  This simulator allows us to replay several I/O traces on a multi-tier storage architecture. We compare the SSD hit ratio obtained with our proposition and with usual solutions such as the LRU and LFU policies.  </p>
@@ -434,9 +434,9 @@ In this work, our aim is to determine whether the ARC algorithm is transposable 
 								<span><i class="fa fa-clock-o"></i> 12h25</span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
-							<h3> Poster 6 </h3>
-							<h4> junior researcher </h4>
-							<p> TBA </p>
+							<h3> Opportunistic Function Cache for Heterogeneous Serverless Computing </h3>
+							<h4> Vincent Lannurien, ENSTA</h4>
+							<p> Serverless computing relies on the composition of short-lived stateless functions that are executed following events such as HTTP requests. These functions are mostly deployed in containers called ”replicas”. Scaling a FaaS application, i.e. to maintain a consistent level of performance, consists in growing or shrinking the pool of function replicas following load peaks.  When a function is requested while no replica exists on the cluster, it goes through a cold start that incurs an additional initialization delay to the function’s response time. Function images are stored in repositories on dedicated nodes and pulled by worker nodes where and when functions are deployed. Depending on image size, this can have detrimental consequences on request latency with deployments where cold starts dominate a function’s total response time. To mitigate these issues, we propose a distributed function cache that opportunistically takes advantage of available disk space and memory on worker nodes in the cluster. Such nodes are highly heterogeneous: we consider functions that can be executed on different platform architectures, ranging from CPUs, to GPUs and FPGAs. Furthermore, storage on these nodes exhibit various levels of performance and cost, ranging from HDDs, to SSDs and NVMs. By proactively caching functions from the same application using adequate storage on the same nodes, we seek to minimize cold starts and data movement to improve total response times. We evaluate our platform in a simulation environment using workload traces derived from Microsoft’s Azure Functions, enriched with measurements from a deepfake detection project at the B&lt;&gt; com Institute of Research and Technology.</p>
 						</div>
 
 					</div>
