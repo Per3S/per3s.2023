@@ -382,9 +382,9 @@ This talk will present a unified architecture for the collocation of HPC and Clo
 								<span><i class="fa fa-clock-o"></i> 12h10</span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
-							<h3> Poster 3 </h3>
-							<h4> junior researcher </h4>
-							<p> TBA </p>
+							<h3> Paving the way towards a practical integration of CRDTs in IPFS </h3>
+							<h4> Quentin Acher, INRIA</h4>
+							<p> InterPlanetary File System (IPFS) is an open-source content-addressable peer-to-peer system that provides large scale distributed data storage and delivery. IPFS is designed to share immutable data, thus modifying data results in a new copy. This may lead to a high cost in terms of storage, data transfer, and latency. For example, in collaborative applications like text editing, a new version of the whole document will be generated and replicated when one single letter is written or deleted.  Conflict-free Replicated Data Types (CRDTs) are specific data types built in a way that mutable data can be managed without the need for consensus-based concurrency control. They are a promising solution for merging modifications on mutable data in IPFS. Previous efforts have explored how to implement such CRDTs in IPFS and discussed the limitations and several potential optimizations, but they have not been implemented and evaluated in real IPFS deployment. In this work-in-progress, we conduct experiments to show the deficiencies of IPFS when dealing with mutable data; and evaluate the convergence time, traffic usage and scalability of our implemen- tations of CRDT in IPFS for two simple data types (i.e., Counter and Set). Our implementations are inspired by previous work and written in Go. They utilize libP2P as a communication system and use a rendez-vous point to connect peers together.</p>
 						</div>
 						<!-- program divider -->
 						<div class="program-divider col-md-12 col-sm-12"></div>
