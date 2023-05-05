@@ -441,6 +441,42 @@ In this work, our aim is to determine whether the ARC algorithm is transposable 
 							<p> Serverless computing relies on the composition of short-lived stateless functions that are executed following events such as HTTP requests. These functions are mostly deployed in containers called ”replicas”. Scaling a FaaS application, i.e. to maintain a consistent level of performance, consists in growing or shrinking the pool of function replicas following load peaks.  When a function is requested while no replica exists on the cluster, it goes through a cold start that incurs an additional initialization delay to the function’s response time. Function images are stored in repositories on dedicated nodes and pulled by worker nodes where and when functions are deployed. Depending on image size, this can have detrimental consequences on request latency with deployments where cold starts dominate a function’s total response time. To mitigate these issues, we propose a distributed function cache that opportunistically takes advantage of available disk space and memory on worker nodes in the cluster. Such nodes are highly heterogeneous: we consider functions that can be executed on different platform architectures, ranging from CPUs, to GPUs and FPGAs. Furthermore, storage on these nodes exhibit various levels of performance and cost, ranging from HDDs, to SSDs and NVMs. By proactively caching functions from the same application using adequate storage on the same nodes, we seek to minimize cold starts and data movement to improve total response times. We evaluate our platform in a simulation environment using workload traces derived from Microsoft’s Azure Functions, enriched with measurements from a deepfake detection project at the B&lt;&gt;com Institute of Research and Technology.</p>
 						</div>
 
+						<!-- program divider -->
+						<div class="program-divider col-md-12 col-sm-12"></div>
+
+						<!-- program speaker here -->
+						<div class="col-md-2 col-sm-2">
+							<img src="images/meriem_bouzouad.png" class="img-responsive" alt="program">
+						</div>
+						<div class="col-md-10 col-sm-10">
+							<h6>
+								<span><i class="fa fa-clock-o"></i> 12h30</span> 
+								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
+							</h6>
+							<h3> PIGMMES : Partial Incremental Gaussian Mixture Molde with Efficient Storage</h3>
+							<h4> Meriem Bouzouad,  ENSTA Bretagne, Lab-Sticc UBO, LMCS Ecole Nationale Supérieure d'Informatique </h4>
+							<h4> Yasmine Benhamadi, ENSTA Bretagne, Lab-Sticc UBO, LMCS Ecole Nationale Supérieure d'Informatique, Camélia Slimani ENSTA Bretagne, Lab-Sticc UBO, Mouloud Koudil Lab-Sticc UBO, LCMS Ecole Nationale Supérieure d'Informatique, Jalil Boukhobza, ENSTA Bretagne, Lab-Sticc UBO</h4>
+							<p> The central focus of this work is the Gaussian Mixture Model (GMM), a machine learning model widely used for density estimation and cluster analysis. The Expectation-Maximization (EM) algorithm is commonly used to train GMMs. One of the main challenges facing this algorithm under the shift towards embedded systems is the crippling memory constraints. Indeed, the EM is an iterative algorithm that requires several scans of the data, thus several I/O opeartions. Hence, when the dataset cannot be fully stored in the main memory, its execution is slowed down by the huge data movements (I/Os) between the main memory and the secondary storage.  In this work, we present an I/O optimization of the EM algorithm for GMMs that relies on two main contributions: (1) a divide-and-conquer strategy that divides the dataset into chunks, learns the GMM separately in each chunk and combines the results incrementally; (2) a strategy that restricts the training of the GMM on a subset of data while producing a sufficiently good accuracy, by utilizing the information learned from the first chunk.  </p>
+						</div>
+
+						<!-- program divider -->
+						<div class="program-divider col-md-12 col-sm-12"></div>
+
+						<!-- program speaker here -->
+						<div class="col-md-2 col-sm-2">
+							<img src="images/Hafsa_karaachira.jpg" class="img-responsive" alt="program">
+						</div>
+						<div class="col-md-10 col-sm-10">
+							<h6>
+								<span><i class="fa fa-clock-o"></i> 12h35</span> 
+								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
+							</h6>
+							<h3> Energy Efficient Any-Time I/O Adaptive K-Means </h3>
+							<h4> Hasfa Kara Achira  ENSTA Bretagne, Lab-Sticc UBO, LMCS Ecole Nationale Supérieure d'Informatique</h4>
+							<h4> Camélia Slimani ENSTA Bretagne, Lab-Sticc UBO, Mouloud Koudil Lab-Sticc UBO, LCMS Ecole Nationale Supérieure d'Informatique, Jalil Boukhobza, ENSTA Bretagne, Lab-Sticc UBO</h4>
+							<p>One of the most popular algorithms for data analysis is K-means, where each cluster is reduced to a mean that is representative of cluster’s data observations. K-Means algorithm iterates over all data elements (data-set) multiple times until it converges. When data-set is larger than the available memory work-space, traditional K-means execution time is dominated by I/Os, since secondary storage is used as an extension to the main memory. To tackle this issue, K-MLIO (K-Means with Low I/Os), a state-of-the-art method, was proposed to decorrelate the number of data spans from the convergence speed by applying a divide-and-conquer approach.  In our work, we aim to propose an any-time and energy efficient version of K-MLIO. By any-time we mean a version that is able to give a results under a time constraint. Our proposal relies on two ideas : (1) since K-MLIO acts on multiple small chunks to data (the divide step), our assumption is that it is possible to only consider a subset of chunks to meet the time constraint at the expense of a (small) clustering error ; (2) it is possible to reduce the power consumption of the method by applying a dynamic voltage and frequency scaling (DVFS) technique during chunks processing. The proposed method consists, in speculating on the remaining chunks worst case processing time to tune the minimum frequency to be used, and the number of data chunks to drop (I/Os to reduce) , so as to meet the time constraint at the expense of the minimum error increase. Preliminary experiments show encouraging results as compared to K-MLIO.  </p>
+						</div>
+
 					</div>
 
 					<div role="tabpanel" class="tab-pane" id="cloud">
