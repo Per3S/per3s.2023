@@ -502,16 +502,16 @@ In this work, our aim is to determine whether the ARC algorithm is transposable 
 
 						<!-- program speaker here -->
 						<div class="col-md-2 col-sm-2">
-							<img src="images/philippe_deniel.jpeg" class="img-responsive" alt="program">
+							<img src="images/louis_douriez.jpeg" class="img-responsive" alt="program">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
 								<span><i class="fa fa-clock-o"></i> 14h30</span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
-							<h3>Optimizing flash at Scale</h3>
-							<h4>Gaël Delbary, CEA</h4>
-							<p> TBA </p>
+							<h3>Boosting Large Language Model Performance thanks to Lustre </h3>
+							<h4>Louis Douriez, DDN</h4>
+							<p> Large Language Models (LLM) are fast becoming the key differentiating tool for NLP as they offer significant accuracy gains. This has been seen recently through the impressive success of ChatGPT and other LLM-powered tools such as the new Microsoft Bing. These large models are scale-up models with billions to trillions of parameters and consistently outperform fine-tuned models with more limited corpus. Between 2019 and 2023 the model size has been multiplied by 1000x and the recent regain attention for sparse models won’t slow down this trend, but training and inference at this scale is challenging and puts enormous pressure on memory resources. To overcome that memory limitation and allow for the next 1000x increase in model size, a few software stacks have been developed to optimize the memory usage and to offload parts of the model from the GPU memory to other forms of storage such as local NVMEs, therefore swapping the model in and out during the run.  We show how LLM offloading performance is dominated by the throughput and how Lustre consistently outperforms by a large margin the local raid of a DGX A100 system while allowing for bigger models to be run: up-to 24 trillion parameters on a single DGX A100 during our testing. We notably show a 1.69x inference throughput speed-up by using Luster over the local raid for the BLOOM model (176 billion parameters). </p>
 						</div>
 
 						<!-- program divider -->
