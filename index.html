@@ -228,6 +228,7 @@ Communications and submissions may be made either in French or in English. </p>
 							<h3>Towards decentralized p2p storage as a secure and sustainable alternative to centralized cloud storage solutions</h3>
 							<h4>Amine Ismail, HIVE</h4>
                             <p> In 2006, British mathematician Clive Humby described data as "the new oil". Later on, as the growth of the Web, it becomes apparent how prophetic this statement was. In order to derive value from data, businesses allocate significant resources towards storing and managing it. Centralized storage has been the prevailing method for storing data for many years, where a third-party provider manages and stores data on large servers. In such a storage system, no matter how stringent the security measures are, the data center authority holds the encryption keys for personal, sensitive, and business information placed in their custody. This raises potential concerns for accessibility, transparency, privacy, sovereignty and control. Moreover, a single point of failure presents an easier and more gainful target for hackers attempting to gain access to a significant amount of data. Decentralized storage solutions were developed to address these issues, among others. They offer a secure and resilient way to store data by distributing storage responsibilities among multiple participants. This approach leverages a network of storage devices contributed by independent users as a shared pool of storage space for storing data while ensuring the persistence and availability of the stored data even when individual peers in the network are unreliable. In this talk we give an overview of the architecture of decentralized cloud storage systems, we discuss their advantages and limitations compared to traditional storage platforms and we present the challenges to be addressed to build such a solution. </p>
+						<h4> <a href="material/Per3s_2023_Amine_Ismail.pdf">Slides of the presentation</a>. </h4>
 						</div>
 						
 						<!-- program speaker here -->
@@ -244,6 +245,7 @@ Communications and submissions may be made either in French or in English. </p>
 							<p> Les graphes sont largement utilisés comme outil d'analyse pour modéliser les interactions dans divers domaines, comme les réseaux sociaux, la finance, et la sécurité informatique. Toutefois, de nombreux graphes sont sujets à des changements continus ou sporadiques, et l'analyse de leur historique est souvent plus pertinente que l’analyse d’un seul état statique. La gestion de l'historique de ces graphes débloque de nombreuses capacités de requête, comme la reconstruction de l'état du graphe avant une défaillance du système, permettant ainsi de prévenir les causes de dysfonctionnement.  
 Dans cette présentation, nous nous concentrons sur l'utilisation de Thing'in, une plateforme de gestion de graphe développée par Orange. Thing'in est utilisée pour gérer un graphe IoT où les nœuds représentent en majorité des objets connectés et les arêtes représentent les connexions entre eux. L’étude de l’historique du graphe de Thing’in permet à ces clients une meilleure analyse des systèmes sous-jacents, notamment dans les usines intelligentes pour la détection des causes de défaillance des systèmes et le suivi des chemins des produits tout au long de la chaîne de fabrication.
 Ainsi, notre objectif principal est de concevoir un système de gestion des graphes temporels et de l'intégrer dans la plateforme Thing'in. Pour ce faire, nous avons développé Clock-G, un système de gestion des graphes temporels, en résolvant divers défis tels que le langage de requête, l'optimisation des requêtes et le stockage des graphes. Ce système permet de stocker les graphes de manière compacte et d'interroger l'historique de manière intuitive à l'aide d'un langage de requête. De plus, notre évaluateur de requêtes utilise l'historique des données déjà inséré dans Clock-G pour choisir </p>
+						<h4> <a href="material/Per3s_2023_Maria_Massri.pdf">Slides of the presentation</a>. </h4>
 						</div>
 
 
@@ -264,6 +266,8 @@ Ainsi, notre objectif principal est de concevoir un système de gestion des grap
                             <p> As Product Manager, Charlotte Letamendia is animating the roadmap of Storage services managed by OVH Cloud, the European cloud leader.
 By sharing daily with users of cloud infrastructure, IT administrators, devops, developers, she passionately debates needs and products. Deployment at scale, performance, agility, cost, scalability, resilience, so many challenges to confront with market trends, standards, and innovations. His role as product manager is humbly to carry the voice of the users and rally the research and development teams, to turn that vision and innovations into a reality.
 Charlotte is an engineer by training, in Telecommunication ENST Paris, and has more than 15 years of experience in product management in high growth tech industry, with specific experience in digital video, media devices, and cloud infrastructure. When not talking about products, Charlotte is passionate of outdoor sports and adventures, you will find her in mountains or on a bicycle. </p>
+						<h4> <a href="material/Per3s_2023_Charlotte_letamendia.pdf">Slides of the presentation</a>. </h4>
+						<h4> <a href="material/Per3s_2023_Laurent_Song.mp4">Demo from the presentation</a>. </h4>
 						</div>
 
 						<!-- program divider -->
@@ -311,6 +315,7 @@ Charlotte is an engineer by training, in Telecommunication ENST Paris, and has m
 							<h3> Container Image Placement for Service Provisioning in the Edge </h3>
 							<h4> Thomas Lambert, Inria</h4>
 							<p> Edge computing promises to extend Clouds by moving computation close to data sources to facilitate short-running and low-latency applications and services. Providing fast and predictable service provisioning time presets a new and mounting challenge, as the scale of Edge-servers grows and the heterogeneity of networks between them increases. This work is driven by a simple question: can we place container images across Edge-servers in such a way that an image can be retrieved to any Edge-server fast and in a predictable time. We propose two novel container image placement algorithms based on k-Center optimization. In particular, we introduce a formal model to tackle down the problem of reducing the maximum retrieval time of container images. Based on the model, we present KCBP and KCBP-WC, two placement algorithms which target reducing the maximum retrieval time of container images to any Edge-server. Evaluations using trace-driven simulations demonstrate that KCBP and KCBP-WC can be applied to various network configurations and reduce the maximum retrieval time of container images.  </p>
+						<h4> <a href="material/Per3s_2023_Thomas_Lambert.pdf">Slides of the presentation</a>. </h4>
 						</div>
 
 						<!-- program divider -->
@@ -330,6 +335,7 @@ Charlotte is an engineer by training, in Telecommunication ENST Paris, and has m
 							<p> The world of computational science faces a paradox due to the separation of HPC and Cloud computing. HPC users seek access to the data analysis and automation tools provided by Cloud technologies, while Cloud users desire the powerful resources of HPC centers. One way to address these requirements is by partitioning the infrastructure into HPC and Cloud stacks. This, however, can lead  to increased maintenance costs and decreased utilization. Additionally, transferring data between different computing systems can be a bottleneck since the amount of data generated by scientific simulations and analyses continues to grow exponentially. 
 
 This talk will present a unified architecture for the collocation of HPC and Cloud applications on the same hardware. Our solution exploits Kubernetes as the runtime manager, Slurm for resource allocation, and Singularity and a rootless containerization engine. The proposed architecture will be demonstrated through two use-cases  that utilize visual workflows (Argo). The first use-case involves a  multi-stage genome analysis workflow that stores data on an on-demand  object storage backend (S3), while the second use-case integrates MPI codes and post-analysis stages into a fully automated  workflow. </p>
+						<h4> <a href="material/Per3s_2023_Fotis_Nikolaidis.pdf">Slides of the presentation</a>. </h4>
 						</div>
 
 					</div>
@@ -494,6 +500,7 @@ In this work, our aim is to determine whether the ARC algorithm is transposable 
 							<h3>Lustre: status and path forward </h3>
 							<h4>Sebastien Buisson, Whamcloud</h4>
 							<p> Lustre is the leading open-source and open-development file system for HPC. Around two thirds of the top 100 supercomputers use Lustre. It is a community developed technology with contributors from around the world. Lustre currently supports many HPC infrastructures beyond scientific research, such as financial services, energy, manufacturing, and life sciences and in recent years has been leveraged by cloud solutions to bring its performance benefits to a variety of new use cases (particularly relating to AI). This talk will reflect on the current state of the Lustre ecosystem and also will include the latest news relating to Lustre community releases (LTS releases and major releases),  the roadmap , and details of features under development. </p>
+						<h4> <a href="material/Per3s_2023_Sebastien_Buisson_Lustre.pdf">Slides of the presentation</a>. </h4>
 						</div>
 
 						<!-- program divider -->
@@ -530,6 +537,7 @@ In this work, our aim is to determine whether the ARC algorithm is transposable 
 							<p> As supercomputers are becoming faster and faster, so does their data output. Since the regularly accessed data must be stored and available quickly to users, it is important to put it on fast storage systems. However, these tend to have a low capacity, meaning we must be able to chose the data which should remain on those types of storage systems, and which can be placed on slower but more capacitive systems. As such, it is important to be able to accurately know the state of a filesystem at any point, but using the conventional means provided by the operating system for this, for instance to do filesystem traversals, can be time consuming if done regularly. Moreover, these operations impose a heavy load on the filesystem, making it slower.
 
 To counter these problems, we created a suite of tools called RobinHood that aims to mirror a filesystem in a database, and use the latter to define policies that will manage data placement according to their usage. </p>
+						<h4> <a href="material/Per3s_2023_Yoann_Valeri_RBH.pdf">Slides of the presentation</a>. </h4>
 						</div>
 
 						<!-- program divider -->
@@ -561,6 +569,7 @@ To counter these problems, we created a suite of tools called RobinHood that aim
 							<p> Storage HPC centers are usually shared by multiple organisations/users with various applications. Those applications can have all kind of IO patterns or metadata accesses assuming they are alone consuming storage ressources.
 So, how do we prevent those different HPC jobs or clients to impact each others? How do we prioritize a particular HPC jobs or nodes? How do we maintain an acceptable storage performances for all the consumers?
 Lustre's filesystem already implements a QoS solution for those purposes named TBF (Token Bucket Filter). This functionality has been in production for 2 years at the CEA. This presentation will describe what is Lustre TBF, how it can be used and what the current limitations are.</p>
+						<h4> <a href="material/Per3s_2023_Etienne_Aujames_TBF.pdf">Slides of the presentation</a>. </h4>
 						</div>
 
 						<!-- program divider -->
